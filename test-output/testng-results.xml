@@ -1,42 +1,48 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
+<testng-results skipped="0" failed="5" ignored="8" total="16" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="22363" started-at="2020-08-04T10:18:57 IST" finished-at="2020-08-04T10:19:19 IST">
+  <suite name="Default suite" duration-ms="156138" started-at="2020-08-04T15:43:14 IST" finished-at="2020-08-04T15:45:51 IST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="22363" started-at="2020-08-04T10:18:57 IST" finished-at="2020-08-04T10:19:19 IST">
-      <class name="com.autodeskcrm.orgtest.DeleteOrganisationTest">
-        <test-method status="FAIL" signature="deleteORgtest()[pri:0, instance:com.autodeskcrm.orgtest.DeleteOrganisationTest@1e965684]" name="deleteORgtest" duration-ms="22302" started-at="2020-08-04T10:18:57 IST" finished-at="2020-08-04T10:19:19 IST">
-          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+    <test name="Default test" duration-ms="156138" started-at="2020-08-04T15:43:14 IST" finished-at="2020-08-04T15:45:51 IST">
+      <class name="com.autodeskcrm.contactTest.DeleteContactWithOrgTest">
+        <test-method status="PASS" signature="configBS()[pri:0, instance:com.autodeskcrm.contactTest.DeleteContactWithOrgTest@4e7dc304]" name="configBS" is-config="true" duration-ms="12" started-at="2020-08-04T15:43:14 IST" finished-at="2020-08-04T15:43:14 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configBS -->
+        <test-method status="PASS" signature="confiAs()[pri:0, instance:com.autodeskcrm.contactTest.DeleteContactWithOrgTest@4e7dc304]" name="confiAs" is-config="true" duration-ms="0" started-at="2020-08-04T15:45:51 IST" finished-at="2020-08-04T15:45:51 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- confiAs -->
+      </class> <!-- com.autodeskcrm.contactTest.DeleteContactWithOrgTest -->
+      <class name="example.ReadDataFromProperty">
+        <test-method status="PASS" signature="createConatct()[pri:0, instance:example.ReadDataFromProperty@64729b1e]" name="createConatct" duration-ms="6" started-at="2020-08-04T15:43:14 IST" finished-at="2020-08-04T15:43:14 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createConatct -->
+      </class> <!-- example.ReadDataFromProperty -->
+      <class name="example.ExecuteSelectQuery">
+        <test-method status="FAIL" signature="createConatct()[pri:0, instance:example.ExecuteSelectQuery@10bbd20a]" name="createConatct" duration-ms="5572" started-at="2020-08-04T15:43:14 IST" finished-at="2020-08-04T15:43:20 IST">
+          <exception class="com.mysql.cj.jdbc.exceptions.CommunicationsException">
             <message>
-              <![CDATA[Element <a href="index.php?module=Accounts&action=index"> is not clickable at point (255,63) because another element <div id="__vtigerjs_dialogbox_olayer__" class="small veil"> obscures it
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DELL-PC', ip: '192.168.211.1', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_20-ea'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 79.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200720193547, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 12208, moz:profile: C:\Users\DELL\AppData\Local..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 6.1, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 5980a51d-92de-4b47-b538-3aff43329fc6]]>
+              <![CDATA[Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: Element <a href="index.php?module=Accounts&action=index"> is not clickable at point (255,63) because another element <div id="__vtigerjs_dialogbox_olayer__" class="small veil"> obscures it
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DELL-PC', ip: '192.168.211.1', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_20-ea'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 79.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200720193547, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 12208, moz:profile: C:\Users\DELL\AppData\Local..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 6.1, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 5980a51d-92de-4b47-b538-3aff43329fc6
-at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.lang.reflect.Constructor.newInstance(Constructor.java:408)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
-at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
-at com.autodeskcrm.orgtest.DeleteOrganisationTest.deleteORgtest(DeleteOrganisationTest.java:84)
+              <![CDATA[com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+at com.mysql.cj.jdbc.exceptions.SQLError.createCommunicationsException(SQLError.java:615)
+at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:57)
+at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:1634)
+at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:637)
+at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:351)
+at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:224)
+at java.sql.DriverManager.getConnection(DriverManager.java:664)
+at java.sql.DriverManager.getConnection(DriverManager.java:247)
+at example.ExecuteSelectQuery.createConatct(ExecuteSelectQuery.java:34)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -49,7 +55,138 @@ at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java
 at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
 at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
 at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at org.testng.TestRunner$$Lambda$49/331510866.accept(Unknown Source)
+at org.testng.TestRunner$$Lambda$53/1391942103.accept(Unknown Source)
+at java.util.ArrayList.forEach(ArrayList.java:1234)
+at org.testng.TestRunner.privateRun(TestRunner.java:767)
+at org.testng.TestRunner.run(TestRunner.java:588)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1214)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1136)
+at org.testng.TestNG.runSuites(TestNG.java:1066)
+at org.testng.TestNG.run(TestNG.java:1034)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: com.mysql.cj.core.exceptions.CJCommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.lang.reflect.Constructor.newInstance(Constructor.java:408)
+at com.mysql.cj.core.exceptions.ExceptionFactory.createException(ExceptionFactory.java:54)
+at com.mysql.cj.core.exceptions.ExceptionFactory.createException(ExceptionFactory.java:93)
+at com.mysql.cj.core.exceptions.ExceptionFactory.createException(ExceptionFactory.java:133)
+at com.mysql.cj.core.exceptions.ExceptionFactory.createCommunicationsException(ExceptionFactory.java:149)
+at com.mysql.cj.mysqla.io.MysqlaSocketConnection.connect(MysqlaSocketConnection.java:83)
+at com.mysql.cj.mysqla.MysqlaSession.connect(MysqlaSession.java:122)
+at com.mysql.cj.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:1754)
+at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:1624)
+... 35 more
+Caused by: java.net.ConnectException: Connection refused: connect
+at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:79)
+at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:345)
+at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+at java.net.Socket.connect(Socket.java:589)
+at com.mysql.cj.core.io.StandardSocketFactory.connect(StandardSocketFactory.java:202)
+at com.mysql.cj.mysqla.io.MysqlaSocketConnection.connect(MysqlaSocketConnection.java:57)
+... 38 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- com.mysql.cj.jdbc.exceptions.CommunicationsException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createConatct -->
+      </class> <!-- example.ExecuteSelectQuery -->
+      <class name="com.autodeskcrm.contactTest.CreateContacWithOrgNametTest">
+        <test-method status="PASS" signature="configBC()[pri:0, instance:com.autodeskcrm.contactTest.CreateContacWithOrgNametTest@48503868]" name="configBC" is-config="true" duration-ms="13110" started-at="2020-08-04T15:43:20 IST" finished-at="2020-08-04T15:43:33 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configBC -->
+        <test-method status="PASS" signature="configBM()[pri:0, instance:com.autodeskcrm.contactTest.CreateContacWithOrgNametTest@48503868]" name="configBM" is-config="true" duration-ms="4958" started-at="2020-08-04T15:43:33 IST" finished-at="2020-08-04T15:43:38 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configBM -->
+        <test-method status="PASS" signature="createContactWithOrgtest()[pri:0, instance:com.autodeskcrm.contactTest.CreateContacWithOrgNametTest@48503868]" name="createContactWithOrgtest" duration-ms="27223" started-at="2020-08-04T15:43:38 IST" finished-at="2020-08-04T15:44:05 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createContactWithOrgtest -->
+        <test-method status="PASS" signature="configAm()[pri:0, instance:com.autodeskcrm.contactTest.CreateContacWithOrgNametTest@48503868]" name="configAm" is-config="true" duration-ms="2866" started-at="2020-08-04T15:44:05 IST" finished-at="2020-08-04T15:44:08 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configAm -->
+        <test-method status="PASS" signature="configAC()[pri:0, instance:com.autodeskcrm.contactTest.CreateContacWithOrgNametTest@48503868]" name="configAC" is-config="true" duration-ms="1324" started-at="2020-08-04T15:44:08 IST" finished-at="2020-08-04T15:44:10 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configAC -->
+      </class> <!-- com.autodeskcrm.contactTest.CreateContacWithOrgNametTest -->
+      <class name="com.autodeskcrm.orgtest.CreateOrganizationTest">
+        <test-method status="PASS" signature="configBC()[pri:0, instance:com.autodeskcrm.orgtest.CreateOrganizationTest@6895a785]" name="configBC" is-config="true" duration-ms="6137" started-at="2020-08-04T15:44:10 IST" finished-at="2020-08-04T15:44:16 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configBC -->
+        <test-method status="PASS" signature="configBM()[pri:0, instance:com.autodeskcrm.orgtest.CreateOrganizationTest@6895a785]" name="configBM" is-config="true" duration-ms="5802" started-at="2020-08-04T15:44:16 IST" finished-at="2020-08-04T15:44:22 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configBM -->
+        <test-method status="FAIL" signature="createORgtest()[pri:0, instance:com.autodeskcrm.orgtest.CreateOrganizationTest@6895a785]" name="createORgtest" duration-ms="7247" started-at="2020-08-04T15:44:22 IST" finished-at="2020-08-04T15:44:29 IST">
+          <exception class="org.openqa.selenium.InvalidSelectorException">
+            <message>
+              <![CDATA[Given xpath expression "//img[@alt='Create Organization...]" is invalid: SyntaxError: The expression is not a legal expression.
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/invalid_selector_exception.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DELL-PC', ip: '192.168.211.1', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_20-ea'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 79.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200720193547, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 12456, moz:profile: C:\Users\DELL\AppData\Local..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 6.1, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 125b07f9-7233-4298-951a-5750d0571c45
+*** Element info: {Using=xpath, value=//img[@alt='Create Organization...]}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.InvalidSelectorException: Given xpath expression "//img[@alt='Create Organization...]" is invalid: SyntaxError: The expression is not a legal expression.
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/invalid_selector_exception.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DELL-PC', ip: '192.168.211.1', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_20-ea'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 79.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200720193547, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 12456, moz:profile: C:\Users\DELL\AppData\Local..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 6.1, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 125b07f9-7233-4298-951a-5750d0571c45
+*** Element info: {Using=xpath, value=//img[@alt='Create Organization...]}
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.lang.reflect.Constructor.newInstance(Constructor.java:408)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at com.autodeskcrm.orgtest.CreateOrganizationTest.createORgtest(CreateOrganizationTest.java:37)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:483)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:821)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at org.testng.TestRunner$$Lambda$53/1391942103.accept(Unknown Source)
 at java.util.ArrayList.forEach(ArrayList.java:1234)
 at org.testng.TestRunner.privateRun(TestRunner.java:767)
 at org.testng.TestRunner.run(TestRunner.java:588)
@@ -68,11 +205,356 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
+          </exception> <!-- org.openqa.selenium.InvalidSelectorException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createORgtest -->
+        <test-method status="PASS" signature="configAm()[pri:0, instance:com.autodeskcrm.orgtest.CreateOrganizationTest@6895a785]" name="configAm" is-config="true" duration-ms="1394" started-at="2020-08-04T15:44:29 IST" finished-at="2020-08-04T15:44:30 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configAm -->
+        <test-method status="PASS" signature="configBM()[pri:0, instance:com.autodeskcrm.orgtest.CreateOrganizationTest@6895a785]" name="configBM" is-config="true" duration-ms="4764" started-at="2020-08-04T15:44:30 IST" finished-at="2020-08-04T15:44:35 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configBM -->
+        <test-method status="PASS" signature="createOrg()[pri:0, instance:com.autodeskcrm.orgtest.CreateOrganizationTest@6895a785]" name="createOrg" duration-ms="15416" started-at="2020-08-04T15:44:35 IST" finished-at="2020-08-04T15:44:50 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createOrg -->
+        <test-method status="FAIL" signature="configAm()[pri:0, instance:com.autodeskcrm.orgtest.CreateOrganizationTest@6895a785]" name="configAm" is-config="true" duration-ms="303" started-at="2020-08-04T15:44:50 IST" finished-at="2020-08-04T15:44:51 IST">
+          <exception class="org.openqa.selenium.ElementNotInteractableException">
+            <message>
+              <![CDATA[Element <a class="drop_down_usersettings" href="index.php?module=Users&action=Logout"> could not be scrolled into view
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DELL-PC', ip: '192.168.211.1', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_20-ea'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 79.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200720193547, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 12456, moz:profile: C:\Users\DELL\AppData\Local..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 6.1, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 125b07f9-7233-4298-951a-5750d0571c45]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementNotInteractableException: Element <a class="drop_down_usersettings" href="index.php?module=Users&action=Logout"> could not be scrolled into view
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DELL-PC', ip: '192.168.211.1', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_20-ea'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 79.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200720193547, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 12456, moz:profile: C:\Users\DELL\AppData\Local..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 6.1, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 125b07f9-7233-4298-951a-5750d0571c45
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.lang.reflect.Constructor.newInstance(Constructor.java:408)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+at com.autodeskcrm.genericutils.BaseClass.configAm(BaseClass.java:88)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:483)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:64)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:364)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:318)
+at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+at org.testng.internal.TestInvoker.runAfterGroupsConfigurations(TestInvoker.java:676)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:660)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:821)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at org.testng.TestRunner$$Lambda$53/1391942103.accept(Unknown Source)
+at java.util.ArrayList.forEach(ArrayList.java:1234)
+at org.testng.TestRunner.privateRun(TestRunner.java:767)
+at org.testng.TestRunner.run(TestRunner.java:588)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1214)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1136)
+at org.testng.TestNG.runSuites(TestNG.java:1066)
+at org.testng.TestNG.run(TestNG.java:1034)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementNotInteractableException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configAm -->
+        <test-method status="SKIP" signature="configAC()[pri:0, instance:com.autodeskcrm.orgtest.CreateOrganizationTest@6895a785]" name="configAC" is-config="true" duration-ms="-1596536091151" started-at="2020-08-04T15:44:51 IST" finished-at="1970-01-01T05:30:00 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configAC -->
+      </class> <!-- com.autodeskcrm.orgtest.CreateOrganizationTest -->
+      <class name="example.ExecuteNonSelectQuery">
+        <test-method status="FAIL" signature="createConatct()[pri:0, instance:example.ExecuteNonSelectQuery@184f6be2]" name="createConatct" duration-ms="6027" started-at="2020-08-04T15:44:51 IST" finished-at="2020-08-04T15:44:57 IST">
+          <exception class="com.mysql.cj.jdbc.exceptions.CommunicationsException">
+            <message>
+              <![CDATA[Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+at com.mysql.cj.jdbc.exceptions.SQLError.createCommunicationsException(SQLError.java:615)
+at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:57)
+at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:1634)
+at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:637)
+at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:351)
+at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:224)
+at java.sql.DriverManager.getConnection(DriverManager.java:664)
+at java.sql.DriverManager.getConnection(DriverManager.java:247)
+at example.ExecuteNonSelectQuery.createConatct(ExecuteNonSelectQuery.java:31)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:483)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:821)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at org.testng.TestRunner$$Lambda$53/1391942103.accept(Unknown Source)
+at java.util.ArrayList.forEach(ArrayList.java:1234)
+at org.testng.TestRunner.privateRun(TestRunner.java:767)
+at org.testng.TestRunner.run(TestRunner.java:588)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1214)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1136)
+at org.testng.TestNG.runSuites(TestNG.java:1066)
+at org.testng.TestNG.run(TestNG.java:1034)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: com.mysql.cj.core.exceptions.CJCommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.lang.reflect.Constructor.newInstance(Constructor.java:408)
+at com.mysql.cj.core.exceptions.ExceptionFactory.createException(ExceptionFactory.java:54)
+at com.mysql.cj.core.exceptions.ExceptionFactory.createException(ExceptionFactory.java:93)
+at com.mysql.cj.core.exceptions.ExceptionFactory.createException(ExceptionFactory.java:133)
+at com.mysql.cj.core.exceptions.ExceptionFactory.createCommunicationsException(ExceptionFactory.java:149)
+at com.mysql.cj.mysqla.io.MysqlaSocketConnection.connect(MysqlaSocketConnection.java:83)
+at com.mysql.cj.mysqla.MysqlaSession.connect(MysqlaSession.java:122)
+at com.mysql.cj.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:1754)
+at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:1624)
+... 35 more
+Caused by: java.net.ConnectException: Connection refused: connect
+at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:79)
+at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:345)
+at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+at java.net.Socket.connect(Socket.java:589)
+at com.mysql.cj.core.io.StandardSocketFactory.connect(StandardSocketFactory.java:202)
+at com.mysql.cj.mysqla.io.MysqlaSocketConnection.connect(MysqlaSocketConnection.java:57)
+... 38 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- com.mysql.cj.jdbc.exceptions.CommunicationsException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createConatct -->
+      </class> <!-- example.ExecuteNonSelectQuery -->
+      <class name="com.autodeskcrm.orgtest.DeleteOrganisationTest">
+        <test-method status="PASS" signature="configBC()[pri:0, instance:com.autodeskcrm.orgtest.DeleteOrganisationTest@56aac163]" name="configBC" is-config="true" duration-ms="7456" started-at="2020-08-04T15:44:57 IST" finished-at="2020-08-04T15:45:04 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configBC -->
+        <test-method status="PASS" signature="configBM()[pri:0, instance:com.autodeskcrm.orgtest.DeleteOrganisationTest@56aac163]" name="configBM" is-config="true" duration-ms="8763" started-at="2020-08-04T15:45:04 IST" finished-at="2020-08-04T15:45:13 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configBM -->
+        <test-method status="FAIL" signature="deleteORgtest()[pri:0, instance:com.autodeskcrm.orgtest.DeleteOrganisationTest@56aac163]" name="deleteORgtest" duration-ms="26126" started-at="2020-08-04T15:45:13 IST" finished-at="2020-08-04T15:45:39 IST">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[Unable to locate element: //input[@name='accountname']
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DELL-PC', ip: '192.168.211.1', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_20-ea'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 79.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200720193547, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 10868, moz:profile: C:\Users\DELL\AppData\Local..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 6.1, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 6303e616-5d81-49f6-be91-7b4f2a52d375
+*** Element info: {Using=xpath, value=//input[@name='accountname']}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element: //input[@name='accountname']
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DELL-PC', ip: '192.168.211.1', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_20-ea'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 79.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200720193547, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 10868, moz:profile: C:\Users\DELL\AppData\Local..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 6.1, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 6303e616-5d81-49f6-be91-7b4f2a52d375
+*** Element info: {Using=xpath, value=//input[@name='accountname']}
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.lang.reflect.Constructor.newInstance(Constructor.java:408)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at com.autodeskcrm.orgtest.DeleteOrganisationTest.deleteORgtest(DeleteOrganisationTest.java:40)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:483)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:821)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at org.testng.TestRunner$$Lambda$53/1391942103.accept(Unknown Source)
+at java.util.ArrayList.forEach(ArrayList.java:1234)
+at org.testng.TestRunner.privateRun(TestRunner.java:767)
+at org.testng.TestRunner.run(TestRunner.java:588)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1214)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1136)
+at org.testng.TestNG.runSuites(TestNG.java:1066)
+at org.testng.TestNG.run(TestNG.java:1034)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- deleteORgtest -->
+        <test-method status="PASS" signature="configAm()[pri:0, instance:com.autodeskcrm.orgtest.DeleteOrganisationTest@56aac163]" name="configAm" is-config="true" duration-ms="1511" started-at="2020-08-04T15:45:39 IST" finished-at="2020-08-04T15:45:41 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configAm -->
+        <test-method status="PASS" signature="configAC()[pri:0, instance:com.autodeskcrm.orgtest.DeleteOrganisationTest@56aac163]" name="configAC" is-config="true" duration-ms="1964" started-at="2020-08-04T15:45:41 IST" finished-at="2020-08-04T15:45:43 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configAC -->
       </class> <!-- com.autodeskcrm.orgtest.DeleteOrganisationTest -->
+      <class name="example.ExecuteSelectQueryVerifyData">
+        <test-method status="FAIL" signature="createConatct()[pri:0, instance:example.ExecuteSelectQueryVerifyData@1f7030a6]" name="createConatct" duration-ms="8048" started-at="2020-08-04T15:45:43 IST" finished-at="2020-08-04T15:45:51 IST">
+          <exception class="com.mysql.cj.jdbc.exceptions.CommunicationsException">
+            <message>
+              <![CDATA[Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+at com.mysql.cj.jdbc.exceptions.SQLError.createCommunicationsException(SQLError.java:615)
+at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:57)
+at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:1634)
+at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:637)
+at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:351)
+at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:224)
+at java.sql.DriverManager.getConnection(DriverManager.java:664)
+at java.sql.DriverManager.getConnection(DriverManager.java:247)
+at example.ExecuteSelectQueryVerifyData.createConatct(ExecuteSelectQueryVerifyData.java:33)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:483)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:821)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at org.testng.TestRunner$$Lambda$53/1391942103.accept(Unknown Source)
+at java.util.ArrayList.forEach(ArrayList.java:1234)
+at org.testng.TestRunner.privateRun(TestRunner.java:767)
+at org.testng.TestRunner.run(TestRunner.java:588)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1214)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1136)
+at org.testng.TestNG.runSuites(TestNG.java:1066)
+at org.testng.TestNG.run(TestNG.java:1034)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: com.mysql.cj.core.exceptions.CJCommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.lang.reflect.Constructor.newInstance(Constructor.java:408)
+at com.mysql.cj.core.exceptions.ExceptionFactory.createException(ExceptionFactory.java:54)
+at com.mysql.cj.core.exceptions.ExceptionFactory.createException(ExceptionFactory.java:93)
+at com.mysql.cj.core.exceptions.ExceptionFactory.createException(ExceptionFactory.java:133)
+at com.mysql.cj.core.exceptions.ExceptionFactory.createCommunicationsException(ExceptionFactory.java:149)
+at com.mysql.cj.mysqla.io.MysqlaSocketConnection.connect(MysqlaSocketConnection.java:83)
+at com.mysql.cj.mysqla.MysqlaSession.connect(MysqlaSession.java:122)
+at com.mysql.cj.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:1754)
+at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:1624)
+... 35 more
+Caused by: java.net.ConnectException: Connection refused: connect
+at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:79)
+at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:345)
+at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+at java.net.Socket.connect(Socket.java:589)
+at com.mysql.cj.core.io.StandardSocketFactory.connect(StandardSocketFactory.java:202)
+at com.mysql.cj.mysqla.io.MysqlaSocketConnection.connect(MysqlaSocketConnection.java:57)
+... 38 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- com.mysql.cj.jdbc.exceptions.CommunicationsException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createConatct -->
+      </class> <!-- example.ExecuteSelectQueryVerifyData -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

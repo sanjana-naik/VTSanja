@@ -3,11 +3,43 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
+      <class name="example.ExecuteSelectQuery">
+        <methods>
+          <include name="createConatct"/>
+        </methods>
+      </class> <!-- example.ExecuteSelectQuery -->
+      <class name="example.ExecuteSelectQueryVerifyData">
+        <methods>
+          <include name="createConatct"/>
+        </methods>
+      </class> <!-- example.ExecuteSelectQueryVerifyData -->
       <class name="com.autodeskcrm.orgtest.DeleteOrganisationTest">
         <methods>
+          <include name="configBM"/>
+          <include name="configAm"/>
           <include name="deleteORgtest"/>
+          <include name="configBS"/>
+          <include name="configBC"/>
+          <include name="configAC"/>
+          <include name="confiAs"/>
         </methods>
       </class> <!-- com.autodeskcrm.orgtest.DeleteOrganisationTest -->
+      <class name="example.ExecuteNonSelectQuery">
+        <methods>
+          <include name="createConatct"/>
+        </methods>
+      </class> <!-- example.ExecuteNonSelectQuery -->
+      <class name="com.autodeskcrm.orgtest.CreateOrganizationTest">
+        <methods>
+          <include name="configBM"/>
+          <include name="configAm"/>
+          <include name="createORgtest"/>
+          <include name="configBS"/>
+          <include name="configBC"/>
+          <include name="configAC"/>
+          <include name="confiAs"/>
+        </methods>
+      </class> <!-- com.autodeskcrm.orgtest.CreateOrganizationTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
